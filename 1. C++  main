@@ -1,0 +1,100 @@
+/*
+
+Cpp Code -> .obj ->
+
+        other header->    exe
+
+
+python <interpretor> 
+    python.exe -> .py ->PC 
+
+*/
+
+#include <iostream> 
+#include <string>
+
+#include <vector>  // template
+// http://www.cplusplus.com/reference/vector/vector/
+/*
+
+empty()
+end()
+erase()
+front()
+insert()
+push_back()
+pop_back()
+size()
+swap() 
+
+*/
+
+using namespace std; // standard template library
+/*
+
+abc = 5
+
+int -> integer
+{
+    int abc = 5;
+
+}
+float -> 
+{
+    float abc = 5.5;
+}
+double -> 
+
+char ->     'a'
+string ->
+            "hello"
+
+
+*/
+
+
+double helper(int a)
+{
+    double b = double(a)/2;
+    return b;
+}
+
+
+
+int main() {
+    
+    vector<int> abc;
+    /*
+    abc = []
+    */
+    abc.push_back(10);
+    // abc = [10]
+    // python: abc.append(10)
+    abc.push_back(20);
+    // abc = [10,20]
+    abc.push_back(20);
+    abc.push_back(20); abc.push_back(20); abc.push_back(20);
+    // python: for i in range(10):
+    /*
+    for (int i = 0 ; i<abc.size(); i++) // ++i -> i = i+1;
+    // start pos; end pos; incremental
+    {
+        cout<<abc[i]<<endl;
+        
+    }
+    */
+
+    int i = 0, j = 0;
+    int m=j++;
+    
+    cout<<++i<<endl;//先加后用
+    
+    cout<<j<<endl;//先用后加
+    cout<<helper(++j)<<endl;
+    
+    cout<<m<<endl;
+    
+    
+    
+    return 0;
+}
